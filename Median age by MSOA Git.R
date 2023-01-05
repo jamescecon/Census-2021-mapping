@@ -45,7 +45,7 @@ library(stringr)
 ###############################################################################################
 # MSOA
 ###############################################################################################
-#Reading in the shape file using sf package
+#Reading in the shp file using sf package
 #https://datacarpentry.org/r-raster-vector-geospatial/06-vector-open-shapefile-in-r/
 #File obtained here: https://geoportal.statistics.gov.uk/datasets/ons::middle-layer-super-output-areas-december-2021-boundaries-super-generalised-clipped-ew-bsc/explore?location=52.808964%2C-2.465415%2C7.08
 boundary_MSOA_2021 <- st_read("YOUR WORKING DIRECTORY/MSOA_2021_EW_BSC.shp")
@@ -68,8 +68,10 @@ MSOA_map
 ###############################################################################################
 #Parliamentary boundaries#
 ###############################################################################################
-#Reading in the shape file using sf package
+#Reading in the shp file using sf package
 #https://datacarpentry.org/r-raster-vector-geospatial/06-vector-open-shapefile-in-r/
+#File obtained here: https://geoportal.statistics.gov.uk/datasets/ons::westminster-parliamentary-constituencies-dec-2021-uk-buc/explore?location=55.215744%2C-3.315966%2C6.92
+
 boundary_parl_2021 <- st_read("YOUR WORKING DIRECTORY/Westminster_Parliamentary_Constituencies_(Dec_2021)_UK_BUC.shp")
 
 #Filtering only England and Wales constituency boundaries
